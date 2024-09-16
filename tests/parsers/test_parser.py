@@ -1,6 +1,7 @@
 import logging
 
 from nomad.datamodel import EntryArchive
+
 from nomad_parser_pyscf.parsers.parser import NewParser
 
 
