@@ -25,7 +25,10 @@ maintainers = [
     { name = "trungphuc vo", email = "votrungphuc063@gmail.com" },
 ]
 license = { file = "LICENSE" }
-dependencies = ["nomad-lab>=1.3.0"]
+dependencies = [
+    "nomad-lab>=1.3.0",
+    "python-magic-bin; sys_platform == 'win32'",
+]
 
 [project.urls]
 Repository = "https://github.com/foo/nomad-parser-pyscf"
