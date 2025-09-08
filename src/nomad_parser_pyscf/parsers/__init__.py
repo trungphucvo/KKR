@@ -8,11 +8,11 @@ class NewParserEntryPoint(ParserEntryPoint):
     def load(self):
         from nomad_parser_pyscf.parsers.parser import NewParser
 
-        return NewParser(**self.dict())
+        return NewParser(**self.model_dump())
 
 
 parser_entry_point = NewParserEntryPoint(
     name='NewParser',
     description='New parser entry point configuration.',
-    mainfile_name_re='.*\.newmainfilename',
+    mainfile_name_re=r'.*\.newmainfilename',
 )
